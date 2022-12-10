@@ -1,3 +1,15 @@
+:root {
+  --background: white;
+  --foreground: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: black;
+    --foreground: white;
+  }
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -7,4 +19,5 @@ canvas {
   display: block;
   width: 100vw;
   height: 100vh;
+  touch-action: none;
 }
